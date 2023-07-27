@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #05235a;
+}
+
+.header h1 {
+    cursor: pointer;
+    font-weight: 400;
+    color: #ccc;
+    margin-left: 20px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #C98E0C;
+}
+
+.header h1 span {
+    color: #C98E0C;
+}
+
+.loginAndBuy {
+    display: flex;
+    margin-right: 30px;
+}
+
+.loginAndBuy i {
+    cursor: not-allowed;
+    margin-right: 20px;
+    font-size: 1.5em;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #CCC;
+    background: #C98E0C;
+    transition: .4s;
+}
+
+.loginAndBuy i:hover {
+    background: #8f6409;
+    color: #fff;
+}
+
+.navhamb {
+    display: none;
+    margin-right: 30px;
+}
+
+.hamb {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamb span {
+    background: #ccc;
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+}
+
+@media (max-width: 920px) {
+    .navhamb {
+        display: block;
+    }
+
+    .loginAndBuy {
+        display: none;
+    }
+}

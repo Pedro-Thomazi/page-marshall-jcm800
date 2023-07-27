@@ -1,0 +1,83 @@
+.input {
+    display: none;
+}
+
+.navLinks ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* border: 1px solid #000; */
+}
+
+.navLinks ul li {
+    margin-right: 20px;
+    padding: 10px 0px;
+    /* border: 1px solid #000; */
+}
+
+.navLinks ul li a {
+    cursor: not-allowed;
+    display: flex;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-bottom: 2px solid transparent;
+}
+
+.navLinks ul li a i {
+    margin-right: 5px;
+}
+
+.navLinks ul li a:hover {
+    border-bottom: 2px solid #C98E0C;
+}
+
+.login,
+.buy {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .navLinks ul li a {
+        font-size: 1em;
+    }
+
+    .navLinks ul li {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1160px) {
+
+}
+
+@media (max-width: 920px) {
+    .navLinks ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        transform: translateX(100%);
+        background: #05235a;
+        padding: 0px 50px;
+        border-top: 2px solid #C98E0C;
+        border-left: 2px solid #C98E0C;
+        border-bottom: 2px solid #C98E0C;
+        transition: .4s;
+    }
+
+    .login,
+    .buy {
+        display: block;
+    }
+
+    .navLinks ul li a {
+        color: #ccc;
+        font-size: 1.2em;
+    }
+}
+
+.input:checked ~ .navLinks ul {
+    transform: translateX(0%);
+}

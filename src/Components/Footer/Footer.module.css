@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #C98E0C;
+    color: #ccc;
+    font-size: 2em;
+    background: #333;
+}
+
+.footer div {
+    margin: 50px;
+}
+
+.footer div p { 
+    letter-spacing: 2px;
+}
+
+.footer div p span {
+    color: #C98E0C;
+    font-weight: 700;
+    border-bottom: 2px solid #C98E0C;
+}

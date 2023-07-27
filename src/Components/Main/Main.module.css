@@ -1,0 +1,283 @@
+.containerMain {
+    background: #ccc;
+    padding: 50px 5vw;
+}
+
+.containerMain section {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.photosSecondary {
+    display: none;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.principal .photos {
+    display: flex;
+    /* border: 1px solid #000; */
+}
+
+.principal .photos div {
+    /* border: 1px solid #000; */
+    width: 100px;
+    margin: 20px;
+}
+
+.principal .photos div img {
+    cursor: pointer;
+    border: 2px solid #C98E0C;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.principalPhoto {
+    width: 600px;
+    margin: 0px 50px;
+    /* border: 1px solid #000; */
+}
+
+.formQuestion,
+.descriptions,
+.characteristics {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.characteristics .characList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.characList li {
+    display: flex;
+    margin: 20px 100px;
+    width: 300px;
+    /* border: 1px solid #000; */
+}
+
+.characList li i {
+    margin-right: 10px;
+}
+
+.characList li p span {
+    font-weight: 600;
+}
+
+.formQuestion h2,
+.formQuestion p,
+.descriptions h2 {
+    margin-bottom: 20px;
+}
+
+.descriptions p {
+    /* border: 1px solid #000; */
+    font-size: 1.3em;
+    width: 90vh;
+    margin-bottom: 40px;
+    color: #555;
+    letter-spacing: 3px;
+}
+
+/* .formQuestion label {
+    border: 1px solid #000;
+} */
+
+.formQuestion label input {
+    width: 600px;
+    height: 50px;
+    padding: 0px 10px;
+    margin: 0px 30px;
+    border: 2px solid #C98E0C;
+    border-radius: 10px;
+}
+
+.formQuestion label .btnQuestion {
+    padding: 20px 50px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 1px solid #0051ff;
+    background: #00ccff;
+    color: #555;
+    transition: .4s;
+}
+
+.formQuestion label .btnQuestion:hover {
+    color: #fff;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.details h2,
+.details .prices {
+    margin-bottom: 30px;
+}
+
+.details .prices .price {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.details .prices p span {
+    color: #00ad00;
+}
+
+.details h2 {
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.local {
+    margin-bottom: 20px;
+}
+
+.local .city {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #aaa;
+}
+
+.local i {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.local .color {
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.local .color span {
+    font-weight: 700;
+}
+
+.details h3 {
+    margin: 20px 0px;
+}
+
+.details .containerBtn {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.details .containerBtn .btnBuy {
+    padding: 15px 60px;
+    background: #00ad00;
+    color: #fff;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+}
+
+.details .containerSecurry,
+.details .containerPoints {
+    margin-bottom: 20px;
+    display: flex;
+    color: #aaa;
+}
+
+.details .containerSecurry i,
+.details .containerPoints i {
+    margin-right: 10px;
+}
+
+.details .containerSecurry p span,
+.details .containerPoints p span {
+    color: #00ccff;
+}
+
+
+@media (max-width: 1450px) {
+    .principal {
+        /* border: 1px solid #000; */
+        width: 60vw;
+    }
+
+    .photos .principalPhoto {
+        width: 40vw;
+    }
+
+    .descriptions p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .formQuestion label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formQuestion label input {
+        width: 90%;
+    }
+
+    .btnQuestion {
+        align-self: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1257px) {
+    
+}
+
+@media (max-width: 1070px) {
+    .principal .photos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .photos .principalPhoto {
+        margin: 0;
+    }
+
+    .principal .photos div {
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid #000; */
+    }
+
+    .principal .photos div img {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .containerMain section {
+        flex-direction: column-reverse;
+    }
+
+    .photosSecondary {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid #000; */
+        width: 100%;
+    }
+
+    .photosSecondary .secondaryPhoto {
+        width: 50%;
+    }
+}
+
+@media (max-width: 794px) {
+    .characList li {
+        margin: 20px 10px;
+    }
+}
